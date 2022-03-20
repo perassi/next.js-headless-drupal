@@ -1,0 +1,37 @@
+{
+  "name": "example-webform",
+  "version": "1.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev -p 3636",
+    "build": "next build",
+    "start": "next start",
+    "preview": "next build && next start -p 3636",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:e2e": "start-server-and-test 'yarn preview' http://localhost:3636 cy:open",
+    "test:e2e:ci": "start-server-and-test 'yarn preview' http://localhost:3636 cy:run"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^2.8.3",
+    "@tailwindcss/forms": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.1",
+    "next": "^12.1.0",
+    "next-drupal": "^1.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.25.3",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@types/node": "^17.0.21",
+    "@types/react": "^17.0.0",
+    "autoprefixer": "^10.4.2",
+    "eslint-config-next": "^12.0.10",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.15",
+    "typescript": "^4.5.5"
+  }
+}

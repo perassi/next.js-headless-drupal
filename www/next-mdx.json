@@ -1,0 +1,16 @@
+{
+  "doc": {
+    "contentPath": "docs",
+    "basePath": "/"
+  },
+  "tutorial": {
+    "contentPath": "tutorials",
+    "basePath": "/learn",
+    "sortBy": "weight"
+  },
+  "feature": {
+    "contentPath": "features",
+    "basePath": "/features",
+    "sortBy": "weight"
+  }
+}
